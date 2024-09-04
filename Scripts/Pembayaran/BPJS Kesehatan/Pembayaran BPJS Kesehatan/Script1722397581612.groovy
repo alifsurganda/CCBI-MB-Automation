@@ -31,6 +31,8 @@ Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJS\\BPJS1.png', FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Dropdown Bulan'), 0)
+
 Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Bulan 2'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Button Selanjutnya'), 0)

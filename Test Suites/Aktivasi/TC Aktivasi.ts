@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Pembelian</name>
+   <name>TC Aktivasi</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,5 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>69f6e932-cf54-41d7-9484-333d56b02801</testSuiteGuid>
+   <testSuiteGuid>48f18f8f-bb55-4219-a9b2-6bd88494f8fa</testSuiteGuid>
+   <testCaseLink>
+      <guid>d0b4eb03-6973-451c-951d-d5d8648a0774</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Akun/Aktivasi/Aktivasi Mobile Banking</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

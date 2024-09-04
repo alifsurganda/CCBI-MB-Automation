@@ -29,7 +29,7 @@ Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoo
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Login/Button Masuk'), 0)
+Mobile.tap(findTestObject('Login/Button Masuuk'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 

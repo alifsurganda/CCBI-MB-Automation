@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3_staging')
+
 Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Menu Transaksi'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Menu Kartu Kredit'), 0)
@@ -34,6 +36,10 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit2.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Field Nominal Tagihan Pelanggan'), 0)
+
+Mobile.setText(findTestObject('Pembayaran/Kartu Kredit/Field Nominal Tagihan Pelanggan'), '100000', 0)
 
 Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Button Selanjut nya'), 0)
 

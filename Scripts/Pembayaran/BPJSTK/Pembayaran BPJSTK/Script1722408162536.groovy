@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
 Mobile.tap(findTestObject('Pembayaran/BPJSTK/Menu Transaksi'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/BPJSTK/Menu BPJSTK'), 0)
@@ -24,6 +26,9 @@ Mobile.tap(findTestObject('Pembayaran/BPJSTK/Menu BPJSTK'), 0)
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJSTK\\BPJSTK1.png', FailureHandling.CONTINUE_ON_FAILURE)
+
+'Isi nomor KTP Manual'
+Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/BPJSTK/Button Cek Status'), 0)
 
@@ -35,7 +40,8 @@ Mobile.tap(findTestObject('Pembayaran/BPJSTK/Dropdown Pilih Bulan'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/BPJSTK/1 Bulan'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+'Isi Lokasi Daerah Manual'
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/BPJSTK/Button Hitung Iuran'), 0)
 

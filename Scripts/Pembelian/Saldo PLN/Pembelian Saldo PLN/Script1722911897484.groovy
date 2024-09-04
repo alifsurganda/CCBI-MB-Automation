@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3_staging')
-
 Mobile.tap(findTestObject('Pembelian/Paket Data/Menu Transaksi'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Saldo PLN/Menu PLN Prabayar'), 0)

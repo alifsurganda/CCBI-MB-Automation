@@ -35,13 +35,17 @@ Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoo
 
 Mobile.tap(findTestObject('Object Repository/Pembelian/Paket Data/Field Nomor Handphone'), 0)
 
-Mobile.setText(findTestObject('Pembelian/Paket Data/Field Nomor Handphone'), '0812', 0)
+Mobile.setText(findTestObject('Pembelian/Paket Data/Field Nomor Handphone'), '0813', 0)
+
+Mobile.tap(findTestObject('Pembelian/Paket Data/Fiekd No HP 2'), 0)
+
+Mobile.setText(findTestObject('Pembelian/Paket Data/Fiekd No HP 2'), '081365016401', 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Pembelian/Paket Data/Pulsa 20K'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/Data 20K'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -73,10 +77,10 @@ Mobile.tap(findTestObject('Pembelian/Paket Data/3'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Paket Data/3'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData5.png', 
     FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Pembelian/Paket Data/Transaksi Gagal Text'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/Button Kembali Halaman Resi'), 0)
 

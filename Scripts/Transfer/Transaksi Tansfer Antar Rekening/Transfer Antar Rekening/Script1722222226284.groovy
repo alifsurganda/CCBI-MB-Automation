@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3_staging')
-
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/Menu Transaksi Transfer'), 0)
 
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/Menu Transfer Overbook'), 0)
@@ -52,13 +50,16 @@ Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/Button Selanjut nya 
 
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/Field Nominal Transfer'), 0)
 
-Mobile.setText(findTestObject('Transfer/Transfer Antar Rekening/Field Nominal Transfer'), '50000000', 0)
+Mobile.setText(findTestObject('Transfer/Transfer Antar Rekening/Field Nominal Transfer'), '50000', 0)
 
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/button selanjut nya 1'), 0)
 
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/Dropdown Kategori'), 0)
 
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/Utilitas'), 0)
+
+Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Transfer\\Transfer Overbook\\Transfer2.png', 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/Button Konfirmasi'), 0)
 
@@ -73,4 +74,9 @@ Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/2'), 0)
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/3'), 0)
 
 Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/3'), 0)
+
+Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Transfer\\Transfer Overbook\\Transfer3.png', 
+    FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Transfer/Transfer Antar Rekening/button kembali 1'), 0)
 
