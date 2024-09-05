@@ -17,21 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3')
-
-Mobile.tap(findTestObject('Object Repository/Login/Field Password'), 0)
-
-Mobile.setText(findTestObject('Login/Field Password'), 'Rsyt1908@', 0)
-
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\Login1.png', FailureHandling.STOP_ON_FAILURE)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Login/Button Masuuk'), 0)
-
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\Login2.png', FailureHandling.STOP_ON_FAILURE)
-
