@@ -17,20 +17,32 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3_staging')
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembelian/Paket Data/Menu Transaksi'), 0)
+Mobile.tapAtPosition(540, 1472)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Transfer/Transfer Antar Bank/butoon transaksi'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData1.png', 
+for (int i = 0; i < 4; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData1.png', 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembelian/Paket Data/Menu Pembelian Paket Data'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData2.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData2.png', 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Pembelian/Paket Data/Field Nomor Handphone'), 0)
@@ -45,42 +57,42 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Pembelian/Paket Data/Data 20K'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/20k'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData3.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData3.png', 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembelian/Paket Data/Button Selanjutnyaa'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Pembelian/Paket Data/Pilih Kategori'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/kategori'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Pembelian/Paket Data/Kategori Top Up'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/kategori pembelian'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData4.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData4.png', 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Pembelian/Paket Data/Button Konfirmasi'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Paket Data/1'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Paket Data/1'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/4'), 0)
+
+Mobile.tap(findTestObject('Pembelian/Paket Data/7'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Paket Data/2'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Paket Data/2'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/5'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Paket Data/3'), 0)
-
-Mobile.tap(findTestObject('Pembelian/Paket Data/3'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/8'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData5.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Paket Data\\PaketData5.png', 
     FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembelian/Paket Data/Button Kembali Halaman Resi'), 0)
+Mobile.closeApplication()
 

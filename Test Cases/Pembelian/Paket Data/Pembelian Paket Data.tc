@@ -4,5 +4,6 @@
    <name>Pembelian Paket Data</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b634b17a-e442-47f9-9e37-7931554666d2</testCaseGuid>
 </TestCaseEntity>

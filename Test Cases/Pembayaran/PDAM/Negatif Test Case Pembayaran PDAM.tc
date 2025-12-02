@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Pembayaran PDAM</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>64305245-2f9a-41c6-88fc-79fbcfef076d</testCaseGuid>
+</TestCaseEntity>

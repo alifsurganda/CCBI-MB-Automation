@@ -17,45 +17,69 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Pembayaran/BPJSTK/Menu Transaksi'), 0)
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.tapAtPosition(540, 1472)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Pembayaran/PDAM/transaksi'), 0)
+
+WebUI.delay(3)
+
+for (int i = 0; i < 2; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
 
 Mobile.tap(findTestObject('Pembayaran/TV/Menu TV'), 0)
 
-Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
+'Tap Jenis Pembayaran Manual'
+Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/TV/Indovision'), 0)
+Mobile.tap(findTestObject('Pembayaran/TV/jenis pembayaran'), 0)
+
+Mobile.tap(findTestObject('Pembayaran/TV/indovision1'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/TV/Field ID Pelanggan'), 0)
 
 Mobile.setText(findTestObject('Pembayaran/TV/Field ID Pelanggan'), '010000000033', 0)
 
+Mobile.hideKeyboard()
+
 Mobile.tap(findTestObject('Pembayaran/TV/Button Selanjutnya'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\TV\\TV1.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\TV\\TV1.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/TV/Button Konfirmasi'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\TV\\TV2.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\TV\\TV2.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/TV/1'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/TV/1'), 0)
+Mobile.tap(findTestObject('Pembayaran/TV/4'), 0)
+
+Mobile.tap(findTestObject('Pembayaran/TV/7'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/TV/2'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/TV/2'), 0)
+Mobile.tap(findTestObject('Pembayaran/TV/5'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/TV/3'), 0)
-
-Mobile.tap(findTestObject('Pembayaran/TV/3'), 0)
+Mobile.tap(findTestObject('Pembayaran/TV/8'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\TV\\TV3.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\TV\\TV3.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Button ke Beranda'), 0)
+Mobile.closeApplication()
 

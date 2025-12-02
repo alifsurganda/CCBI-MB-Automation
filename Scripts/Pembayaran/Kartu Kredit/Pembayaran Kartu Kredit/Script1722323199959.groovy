@@ -17,55 +17,79 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3_staging')
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Menu Transaksi'), 0)
+Mobile.tapAtPosition(540, 1472)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/transaksi'), 0)
+
+WebUI.delay(3)
+
+for (int i = 0; i < 2; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
+
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Menu Kartu Kredit'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit1.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit1.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Transaksi Terakhir'), 0)
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/pilih jenis pembayaran'), 0)
+
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/citibank (1)'), 0)
+
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/nomor kartu'), 0)
+
+Mobile.setText(findTestObject('Pembayaran/Kartu Kredit/nomor kartu'), '1234567812345600', 0)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/nominal'), 0)
+
+Mobile.setText(findTestObject('Pembayaran/Kartu Kredit/nominal'), '10000', 0)
+
+Mobile.hideKeyboard()
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit2.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit2.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Field Nominal Tagihan Pelanggan'), 0)
-
-Mobile.setText(findTestObject('Pembayaran/Kartu Kredit/Field Nominal Tagihan Pelanggan'), '100000', 0)
 
 Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Button Selanjut nya'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit3.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit3.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Button Konfirmasi'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/1'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/1'), 0)
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/4'), 0)
+
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/7'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/2'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/2'), 0)
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/5'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/3'), 0)
+Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/8'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/3'), 0)
+Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit3.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Kartu Kredit\\KartuKredit3.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('Pembelian/Paket Data/Button Kembali Halaman Resi'), 0)
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Pembayaran MPN</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cb3fdef5-0387-4e47-a1a9-54e8c1b51b74</testCaseGuid>
+</TestCaseEntity>

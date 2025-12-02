@@ -4,5 +4,6 @@
    <name>Login Valid</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>2d12aa3c-88b8-445f-b6a3-259fa3f54bdd</testCaseGuid>
 </TestCaseEntity>

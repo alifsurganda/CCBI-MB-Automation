@@ -4,9 +4,12 @@
    <name>Automation Mobile Banking V3 DSI</name>
    <tag></tag>
    <UUID>4881b891-f413-4282-986f-476d0073e310</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>ENTERPRISE</modifiedEdition>
+   <modifiedVersion>10.3.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>D:\Product\Automation Mobile Banking V3 DSI\Automation Mobile Banking V3 DSI.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\dwida\Documents\Project Alif\CCBI\Katalon\Automation Mobile Banking V3 DSI\Automation Mobile Banking V3 DSI.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

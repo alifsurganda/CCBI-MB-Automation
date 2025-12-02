@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Pembayaran Telkompay</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>944d92eb-40cb-485d-a0b3-4776da7debbc</testCaseGuid>
+</TestCaseEntity>

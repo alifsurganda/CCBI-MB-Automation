@@ -4,5 +4,6 @@
    <name>Pembayaran Internet</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>75f112b7-c222-4b11-b57e-40bb65dea4f6</testCaseGuid>
 </TestCaseEntity>

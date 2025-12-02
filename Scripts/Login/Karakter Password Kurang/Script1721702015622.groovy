@@ -17,23 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3')
+Mobile.startExistingApplication('com.mobile.ccbi.dev')
 
 Mobile.tap(findTestObject('Object Repository/Login/Field Password'), 0)
 
-Mobile.setText(findTestObject('Login/Field Password'), 'Rsyt19', 0)
+Mobile.setText(findTestObject('Login/Field Password'), 'A13s@', 0)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\LoginValid1.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\kurangkosong.png', 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Login/Hide Button'), 0)
+Mobile.delay(3)
 
-Mobile.tap(findTestObject('Object Repository/Login/Button Masuk'), 0)
+Mobile.tap(findTestObject('Login/Lupa Password/login'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\LoginValid2.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\password kosong1.png', 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyEqual('Password tidak boleh kurang dari 8 digit', 'Password tidak boleh kurang dari 8 digit')
 

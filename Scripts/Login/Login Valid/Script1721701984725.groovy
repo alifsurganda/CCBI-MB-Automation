@@ -17,21 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3')
+Mobile.startExistingApplication('com.mobile.ccbi.dev')
 
 Mobile.tap(findTestObject('Object Repository/Login/Field Password'), 0)
 
-Mobile.setText(findTestObject('Login/Field Password'), 'Rsyt1908@', 0)
-
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\Login1.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.setText(findTestObject('Login/Field Password'), '@Dwidasa1', 0)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Login/Button Masuuk'), 0)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\login.png', 
+    FailureHandling.STOP_ON_FAILURE)
+
+Mobile.hideKeyboard()
+
+WebUI.delay(5)
+
+Mobile.tap(findTestObject('Login/Lupa Password/login'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\Login2.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\login2.png', 
+    FailureHandling.STOP_ON_FAILURE)
 

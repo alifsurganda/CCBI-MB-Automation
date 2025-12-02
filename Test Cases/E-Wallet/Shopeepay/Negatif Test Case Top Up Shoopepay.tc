@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Top Up Shoopepay</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>feb625b7-d85e-49ef-89b7-b384bac04b0e</testCaseGuid>
+</TestCaseEntity>

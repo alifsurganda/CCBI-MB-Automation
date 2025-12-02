@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Transfer Antar Rekening</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>548310d5-ad04-4907-bbb4-7abe5927c246</testCaseGuid>
+</TestCaseEntity>

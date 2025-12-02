@@ -4,5 +4,6 @@
    <name>Pembayaran TV</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>c1556a9b-fb8e-479c-aafd-e3a2ae3bbc01</testCaseGuid>
 </TestCaseEntity>

@@ -17,48 +17,60 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Pembelian/Paket Data/Menu Transaksi'), 0)
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembelian/Saldo PLN/Menu PLN Prabayar'), 0)
+Mobile.tapAtPosition(540, 1472)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/transaksi'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Saldo PLN\\SaldoPLN1.png', 
+for (int i = 0; i < 2; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
+
+Mobile.tap(findTestObject('Pembelian/Saldo PLN/Menu PLN Prabayar'), 0)
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Saldo PLN\\SaldoPLN1.png', 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembelian/Saldo PLN/Field ID'), 0)
+Mobile.tap(findTestObject('Pembelian/Saldo PLN/favorit'), 0)
 
-Mobile.setText(findTestObject('Pembelian/Saldo PLN/Field ID'), '14023699870', 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Pembelian/Saldo PLN/Saldo 100K'), 0)
+Mobile.tap(findTestObject('Pembelian/Saldo PLN/20K'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Saldo PLN/Button Selanjutnya 1'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Saldo PLN\\SaldoPLN2.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Saldo PLN\\SaldoPLN2.png', 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembelian/Saldo PLN/Button Konfirmasi'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Saldo PLN/1'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Saldo PLN/1'), 0)
+Mobile.tap(findTestObject('Pembelian/Saldo PLN/4'), 0)
+
+Mobile.tap(findTestObject('Pembelian/Saldo PLN/7'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Saldo PLN/2'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Saldo PLN/2'), 0)
+Mobile.tap(findTestObject('Pembelian/Saldo PLN/5'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Saldo PLN/3'), 0)
+Mobile.tap(findTestObject('Pembelian/Saldo PLN/8'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Saldo PLN/3'), 0)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Saldo PLN\\SaldoPLN3.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Saldo PLN\\SaldoPLN3.png', 
     FailureHandling.STOP_ON_FAILURE)
+
+Mobile.closeApplication()
 

@@ -4,5 +4,6 @@
    <name>Pembayaran Pascabayar</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>fab1a57a-abaa-473f-b069-b088660de3b5</testCaseGuid>
 </TestCaseEntity>

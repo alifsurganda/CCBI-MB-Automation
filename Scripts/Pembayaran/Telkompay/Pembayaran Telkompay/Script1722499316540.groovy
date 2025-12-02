@@ -17,44 +17,60 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Pembayaran/BPJSTK/Menu Transaksi'), 0)
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Telkompay/Menu Telkompay'), 0)
+Mobile.tapAtPosition(540, 1472)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(3)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Telkompay\\Telkompay1.png', 
+Mobile.tap(findTestObject('Pembayaran/PDAM/transaksi'), 0)
+
+WebUI.delay(3)
+
+for (int i = 0; i < 2; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
+
+Mobile.tap(findTestObject('Pembayaran/Telkompay/telkom'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Telkompay\\Telkompay1.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/Telkompay/Field ID Pelanggan'), 0)
 
 Mobile.setText(findTestObject('Pembayaran/Telkompay/Field ID Pelanggan'), '127369366001', 0)
 
+Mobile.hideKeyboard()
+
 Mobile.tap(findTestObject('Pembayaran/Telkompay/Button Selanjutnya'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Telkompay\\Telkompay2.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Telkompay\\Telkompay2.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/Telkompay/Button Konfirmasi'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/Telkompay/1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Telkompay/1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('Pembayaran/Telkompay/4'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.tap(findTestObject('Pembayaran/Telkompay/7'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/Telkompay/2'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Telkompay/2'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('Pembayaran/Telkompay/5'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Telkompay/3'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('Pembayaran/Telkompay/3'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('Pembayaran/Telkompay/8'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Telkompay\\Telkompay3.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\Telkompay\\Telkompay3.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('Pembayaran/Button ke Beranda'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

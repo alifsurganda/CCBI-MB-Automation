@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Pembayaran Pascabayar</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>657fd4f7-8e30-40ea-80a2-9778a19b8743</testCaseGuid>
+</TestCaseEntity>

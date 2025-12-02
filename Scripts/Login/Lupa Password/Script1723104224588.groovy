@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3_staging')
+Mobile.startExistingApplication('com.mobile.ccbi.dev')
 
 Mobile.tap(findTestObject('Login/Lupa Password/Lupa Password'), 0)
 

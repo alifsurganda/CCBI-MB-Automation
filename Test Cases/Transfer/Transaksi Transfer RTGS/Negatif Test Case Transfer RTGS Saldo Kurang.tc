@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Transfer RTGS Saldo Kurang</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4ff184c1-2055-40b1-82aa-1fa22d6fa1fa</testCaseGuid>
+</TestCaseEntity>

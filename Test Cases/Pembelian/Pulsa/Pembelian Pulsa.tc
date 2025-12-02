@@ -4,5 +4,6 @@
    <name>Pembelian Pulsa</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>551b99f9-a4ba-4669-b391-db49f9db47f1</testCaseGuid>
 </TestCaseEntity>

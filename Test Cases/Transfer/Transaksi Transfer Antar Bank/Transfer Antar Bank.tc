@@ -4,5 +4,6 @@
    <name>Transfer Antar Bank</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1f34c36c-fb76-4087-86ab-3690eeacf9d3</testCaseGuid>
 </TestCaseEntity>

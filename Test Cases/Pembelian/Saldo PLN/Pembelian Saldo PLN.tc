@@ -4,5 +4,6 @@
    <name>Pembelian Saldo PLN</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a87b3801-12c6-4b11-9ddd-f991047ef54a</testCaseGuid>
 </TestCaseEntity>

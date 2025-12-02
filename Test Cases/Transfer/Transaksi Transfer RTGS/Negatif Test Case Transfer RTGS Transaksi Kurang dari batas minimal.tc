@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Transfer RTGS Transaksi Kurang dari batas minimal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fa66e2a3-5354-4328-9414-1637c174798a</testCaseGuid>
+</TestCaseEntity>

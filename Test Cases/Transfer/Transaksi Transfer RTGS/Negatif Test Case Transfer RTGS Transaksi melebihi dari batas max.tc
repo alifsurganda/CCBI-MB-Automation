@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Transfer RTGS Transaksi melebihi dari batas max</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a54c1e18-11a5-4126-add1-074f1682ddab</testCaseGuid>
+</TestCaseEntity>

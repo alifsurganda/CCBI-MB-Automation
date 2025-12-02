@@ -17,48 +17,69 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Pembayaran/BPJSTK/Menu Transaksi'), 0)
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.tapAtPosition(540, 1472)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Pembayaran/PDAM/transaksi'), 0)
+
+WebUI.delay(3)
+
+for (int i = 0; i < 2; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
 
 Mobile.tap(findTestObject('Pembayaran/PLN/Menu PLN'), 0)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+'Tap Field Jenis Pembayaran'
+Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/PLN/PLN Non Taglis'), 0)
+Mobile.tap(findTestObject('Pembayaran/PLN/jenis pembayaran'), 0)
+
+Mobile.tap(findTestObject('Pembayaran/PLN/pln nontaglist'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/PLN/Field ID Pelanggan'), 0)
 
 Mobile.setText(findTestObject('Pembayaran/PLN/Field ID Pelanggan'), '5383654782201', 0)
 
+Mobile.hideKeyboard()
+
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\PLN\\PLNnontaglis1.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\PLN non Taglis\\PLNnontaglis1.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/PLN/Button Selanjutnya'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\PLN\\PLNnontaglis2.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\PLN non Taglis\\PLNnontaglis2.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/PLN/Button Konfirmasi'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/PLN/1'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/PLN/1'), 0)
+Mobile.tap(findTestObject('Pembayaran/PLN/4'), 0)
+
+Mobile.tap(findTestObject('Pembayaran/PLN/7'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/PLN/2'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/PLN/2'), 0)
+Mobile.tap(findTestObject('Pembayaran/PLN/5'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/PLN/3'), 0)
-
-Mobile.tap(findTestObject('Pembayaran/PLN/3'), 0)
+Mobile.tap(findTestObject('Pembayaran/PLN/8'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\PLN\\PLNnontaglis3.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\PLN non Taglis\\PLNnontaglis3.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Button ke Beranda'), 0)
+Mobile.closeApplication()
 

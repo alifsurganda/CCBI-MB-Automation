@@ -4,5 +4,6 @@
    <name>Pembayaran Telkompay</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>9797a729-4674-40df-90f6-cfa229a579e0</testCaseGuid>
 </TestCaseEntity>

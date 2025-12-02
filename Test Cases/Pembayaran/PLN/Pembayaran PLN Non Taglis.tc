@@ -4,5 +4,6 @@
    <name>Pembayaran PLN Non Taglis</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>4148eb5b-d558-4029-86a7-21a7c71878c7</testCaseGuid>
 </TestCaseEntity>

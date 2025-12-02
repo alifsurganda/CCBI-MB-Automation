@@ -4,5 +4,6 @@
    <name>Pembayaran Kartu Kredit</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>5bf48119-2b7b-4f87-9196-db6fa25c41d6</testCaseGuid>
 </TestCaseEntity>

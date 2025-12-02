@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negatif Test Case Transfer RTGS Invalid PIN</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>40271ef2-2170-4a00-9d66-8b7b3f4be89b</testCaseGuid>
+</TestCaseEntity>

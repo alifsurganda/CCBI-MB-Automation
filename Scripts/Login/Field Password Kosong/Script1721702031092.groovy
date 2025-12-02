@@ -17,15 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.dwidasa.product.mobilebanking_v3')
+Mobile.startExistingApplication('com.mobile.ccbi.dev')
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Login/Button Masuk'), 0)
+WebUI.delay(10)
+
+Mobile.tap(findTestObject('Login/Lupa Password/login'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\LoginValid2.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Login\\password kosong.png', 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Login/Password tidak boleh kosong'), 0)
 

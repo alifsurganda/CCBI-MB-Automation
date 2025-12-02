@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Request Kode Aktivasi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c17e223b-0729-44f5-99ce-0c7dfc219e3f</testCaseGuid>
+</TestCaseEntity>

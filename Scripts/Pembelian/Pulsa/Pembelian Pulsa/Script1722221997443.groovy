@@ -17,45 +17,64 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/Menu Transaksi'), 0)
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/Menu Pulsa Isi Ulang'), 0)
+Mobile.tapAtPosition(540, 1472)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/transaksi'), 0)
+
+WebUI.delay(3)
+
+for (int i = 0; i < 8; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
+
+Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/pembelian pulsa'), 0)
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Pulsa\\Pulsa3.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Pulsa\\Pulsa3.png', 
+    FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/Pulsa XL'), 0)
+Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/xl pulsa'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/Pulsa 100K XL'), 0)
+Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/25k'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/Button Selanjutnya 1'), 0)
+Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/button selanjutnya5'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/Dropdown Kategori'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/kategori'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/Top-up'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/kategori pembelian'), 0)
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Pulsa\\Pulsa2.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Pulsa\\Pulsa2.png', 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/Button Konfirmasi'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/1'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/1'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/4'), 0)
+
+Mobile.tap(findTestObject('Pembelian/Paket Data/7'), 0)
 
 Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/2'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/2'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/5'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/3'), 0)
+Mobile.tap(findTestObject('Pembelian/Paket Data/8'), 0)
 
-Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/3'), 0)
+Mobile.delay(10, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Pulsa\\Pulsa1.png', 
+    FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembelian\\Pulsa\\Pulsa1.png', FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Pembelian/Paket Data/Button Kembali Halaman Resi'), 0)
+Mobile.closeApplication()
 

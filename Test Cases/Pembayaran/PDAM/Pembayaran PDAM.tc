@@ -4,5 +4,6 @@
    <name>Pembayaran PDAM</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0cc24774-09f5-4fde-ac09-ce757e5f6e80</testCaseGuid>
 </TestCaseEntity>

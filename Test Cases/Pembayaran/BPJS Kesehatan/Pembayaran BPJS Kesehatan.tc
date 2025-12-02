@@ -4,5 +4,6 @@
    <name>Pembayaran BPJS Kesehatan</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>50c11cf7-6395-4849-a6e5-2cc50fc69bb8</testCaseGuid>
 </TestCaseEntity>

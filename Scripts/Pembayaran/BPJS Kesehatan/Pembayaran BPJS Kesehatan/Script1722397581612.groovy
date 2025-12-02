@@ -19,17 +19,37 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pembayaran/Kartu Kredit/Menu Transaksi'), 0)
+Mobile.tapAtPosition(540, 1472)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Pembelian/Pulsa Isi Ulang/transaksi'), 0)
+
+WebUI.delay(3)
+
+for (int i = 0; i < 2; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
 
 Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Menu BPJS Kesehatan'), 0)
 
+Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJS\\bpjs.png', 
+    FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Field ID BPJS'), 0)
 
-Mobile.setText(findTestObject('Pembayaran/BPJS Kesehatan/Field ID BPJS'), '00116800000', 0)
+Mobile.setText(findTestObject('Pembayaran/BPJS Kesehatan/Field ID BPJS'), '888880011683000001', 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJS\\BPJS1.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJS\\BPJS1.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Dropdown Bulan'), 0)
 
@@ -39,25 +59,27 @@ Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Button Selanjutnya'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJS\\BPJS2.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJS\\BPJS2.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Button Konfirmasi'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/1'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/1'), 0)
+Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/4'), 0)
+
+Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/7'), 0)
 
 Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/2'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/2'), 0)
+Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/5'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/3'), 0)
+Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/8'), 0)
 
-Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/3'), 0)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJS\\BPJS3resi.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.takeScreenshot('D:\\Product\\Automation Mobile Banking V3 DSI\\Screenshoot\\Pembayaran\\BPJS\\BPJS3.png', FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('Pembayaran/BPJS Kesehatan/Button Ke Beranda'), 0)
+Mobile.closeApplication()
 

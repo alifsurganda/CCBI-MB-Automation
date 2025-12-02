@@ -4,5 +4,6 @@
    <name>Pembayaran BPJSTK</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a7ad146e-c13a-41fa-907c-b78eed8e3c6e</testCaseGuid>
 </TestCaseEntity>
