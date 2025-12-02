@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Lokasi ATM dan Cabang</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>848733b4-11d6-43f8-b43a-e07a0c8402be</testCaseGuid>
+</TestCaseEntity>
