@@ -27,39 +27,24 @@ Mobile.tap(findTestObject('Akun/akun'), 0)
 
 WebUI.delay(3)
 
-Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\password.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\snk.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Akun/ubah password'), 0)
+Mobile.tap(findTestObject('Akun/snk'), 0)
 
-WebUI.delay(3)
+Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Akun/password saat ini'), 0)
-
-Mobile.setText(findTestObject('Akun/password saat ini'), '@Dwidasa12', 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Akun/password baru'), 0)
-
-Mobile.setText(findTestObject('Akun/password baru'), '@Dwidasa1', 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Akun/konfirm password baru'), 0)
-
-Mobile.setText(findTestObject('Akun/konfirm password baru'), '@Dwidasa1', 0)
-
-Mobile.hideKeyboard()
-
-WebUI.delay(2)
-
-Mobile.tap(findTestObject('Akun/button selanjutnya'), 0)
-
-WebUI.delay(2)
-
-Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\password2.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\snk.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Akun/tombol selesai'), 0)
+for (int i = 0; i < 26; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
+
+
+Mobile.tap(findTestObject('Akun/saya mengerti dan setuju'), 0)
 

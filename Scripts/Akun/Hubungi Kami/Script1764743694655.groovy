@@ -27,39 +27,37 @@ Mobile.tap(findTestObject('Akun/akun'), 0)
 
 WebUI.delay(3)
 
-Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\password.png', 
+for (int i = 0; i < 1; i++) {
+    if (Mobile.verifyElementExist(findTestObject('Object Repository/Pembelian'), 1, FailureHandling.OPTIONAL)) {
+        break
+    }
+    
+    Mobile.swipe(500, 1800, 500, 600)
+}
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\hubungi1.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Akun/ubah password'), 0)
+Mobile.tap(findTestObject('Akun/hubungi kami'), 0)
 
-WebUI.delay(3)
+Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Akun/password saat ini'), 0)
-
-Mobile.setText(findTestObject('Akun/password saat ini'), '@Dwidasa12', 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Akun/password baru'), 0)
-
-Mobile.setText(findTestObject('Akun/password baru'), '@Dwidasa1', 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Akun/konfirm password baru'), 0)
-
-Mobile.setText(findTestObject('Akun/konfirm password baru'), '@Dwidasa1', 0)
-
-Mobile.hideKeyboard()
-
-WebUI.delay(2)
-
-Mobile.tap(findTestObject('Akun/button selanjutnya'), 0)
-
-WebUI.delay(2)
-
-Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\password2.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\hubungi2.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Akun/tombol selesai'), 0)
+Mobile.tap(findTestObject('Akun/no hp'), 0)
+
+Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\hubungi3.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.tap(findTestObject('Akun/call'), 0)
+
+Mobile.tap(findTestObject('Akun/android.widget.Button - Selalu'), 0)
+
+Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\hubungi4.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 

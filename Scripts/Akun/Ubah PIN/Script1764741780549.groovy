@@ -17,61 +17,40 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.mobile.ccbi.dev')
+WebUI.callTestCase(findTestCase('Login/Login Valid'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Aktivasi/english'), 0)
+Mobile.tapAtPosition(540, 1472)
 
-Mobile.tap(findTestObject('Aktivasi/aktivasi'), 0)
+WebUI.delay(3)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('Akun/akun'), 0)
 
-Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Aktivasi\\Aktivasi1.png', 
+WebUI.delay(3)
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\pin.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(1)
+Mobile.tap(findTestObject('Akun/ubah pin'), 0)
 
-Mobile.tap(findTestObject('Aktivasi/Klik text userid'), 1)
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\pin lama.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(1)
+Mobile.tap(findTestObject('Aktivasi/1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.setText(findTestObject('Aktivasi/Klik text userid'), 'PERTOPLO9173', 1)
+Mobile.tap(findTestObject('Aktivasi/4'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.hideKeyboard()
+Mobile.tap(findTestObject('Aktivasi/7'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('Aktivasi/2'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Aktivasi/input aktivasi'), 1)
+Mobile.tap(findTestObject('Aktivasi/5'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(1)
-
-Mobile.setText(findTestObject('Aktivasi/input aktivasi'), '80180630', 1)
-
-Mobile.hideKeyboard()
-
-Mobile.delay(30, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Aktivasi/next button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('Aktivasi/password'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.setText(findTestObject('Aktivasi/password'), '@Dwidasa1', 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Aktivasi/konfirm password'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.setText(findTestObject('Aktivasi/konfirm password'), '@Dwidasa1', 0)
-
-Mobile.hideKeyboard()
+Mobile.tap(findTestObject('Aktivasi/9'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Aktivasi\\Aktivasi2.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\pin baru.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('Aktivasi/next button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Aktivasi/1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -85,7 +64,10 @@ Mobile.tap(findTestObject('Aktivasi/5'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Aktivasi/8'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(3)
+
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\pin2.png', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Aktivasi/1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -99,10 +81,10 @@ Mobile.tap(findTestObject('Aktivasi/5'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Aktivasi/8'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(0)
 
-Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Aktivasi\\Aktivasi3 berhasil.png', 
+Mobile.takeScreenshot('C:\\Users\\dwida\\Documents\\Project Alif\\CCBI\\Katalon\\Automation Mobile Banking V3 DSI\\Screenshoot\\Akun\\pin3.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Aktivasi/login'), 0)
+Mobile.tap(findTestObject('Akun/tombol selesai'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

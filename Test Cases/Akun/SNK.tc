@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Aktivasi Mobile Banking</name>
+   <name>SNK</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>8a31c80f-9b20-43e0-acbf-634753d72b1e</testCaseGuid>
+   <testCaseGuid>d160fe56-c2d5-4cc0-93cb-181e0b2652b0</testCaseGuid>
 </TestCaseEntity>

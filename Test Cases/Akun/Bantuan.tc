@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Aktivasi Mobile Banking</name>
+   <name>Bantuan</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>8a31c80f-9b20-43e0-acbf-634753d72b1e</testCaseGuid>
+   <testCaseGuid>cab94582-861b-4396-9614-622eb370a1e7</testCaseGuid>
 </TestCaseEntity>

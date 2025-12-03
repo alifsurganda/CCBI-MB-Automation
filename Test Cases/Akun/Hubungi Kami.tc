@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Aktivasi Mobile Banking</name>
+   <name>Hubungi Kami</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>8a31c80f-9b20-43e0-acbf-634753d72b1e</testCaseGuid>
+   <testCaseGuid>d90547b9-b7af-4c59-a3aa-de56eddac50e</testCaseGuid>
 </TestCaseEntity>
